@@ -21,12 +21,13 @@
   padding: 20px;
 }
 
-.wrapper h2 {
-  display: inline-block;
-  float: left;
+-webkit-transform: scale(0.75);
+input[type=radio]
+{
+ 
+  -webkit-transform: scale(0.75); 
+
+
 }
-.wrapper h3 {
-  display: inline-block;
-  float: right;
-  color: #bcbcbc;
-}
+
+

@@ -3,83 +3,126 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Simple Instagram Project by Inti Luna</title>
-		<link rel="stylesheet" href="styles.css" />
+		<title>Form project</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
+		<script src="https://kit.fontawesome.com/abac3c305c.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<div class="wrapper">
+		<div class="container card justify-content-center m-5 border rounded" style="background-color:lightgray">
+			<div class="card-title" > 
+				<h1>Payment form example</span></h1>
+			</div>
 
-			<header>
-				<h1>Breathe Code Photo Feed</h1>
-			</header>
+			
+			<div class="card">
 
-				<div class="item">
-					<div class="item-top">
-						<h2>Familia</h2>
-						<h3>1/5</h3>
-					</div>
-					<div class="item-middle">
-						<img src="./images/1.JPG" alt="test">
-					</div>
-					<div class="item-bottom">
-						<p>Fer, Lara y Ale</p>
-					</div>
+				
+
+				<div class="card-body">
+				  
+				<div class="alert alert-danger" role="alert">
+						Some fields are missing
 				</div>
+				  
+				  <div class="mb-3">
+					<div class="row">
+						<div class="col">
+							<label for="Card" class="form-label">Card #</label>
+							<input type="password" class="form-control" placeholder="XXXXXXXXXXXXXXX" aria-label="Card">
+						</div>
+						<div class="col">
+							<label for="CVC" class="form-label">CVC #</label>
+						  	<input type="number" class="form-control" placeholder="0000" aria-label="CVC">
+						</div>
+						<div class="col">
+							<label for="Amount" class="form-label">Amount</label>
+							<div class="inpuy-group d-flex">
+								$
+								<input type="number" class="form-control" placeholder="Amount" aria-label="Amount">
+							</div>
+							
+						  </div>
 
-				<div class="item">
-					<div class="item-top">
-						<h2>Mapa del tesoro</h2>
-						<h3>2/5</h3>
-					</div>
-					<div class="item-middle">
-						<img src="./images/2.JPG" alt="test">
-					</div>
-					<div class="item-bottom">
-						<p>Hay que cruzar un rio, saltar unas piedras de colores y pasar un camino de piedra...</p>
-					</div>
-				</div>
+						  <div class="row g-3">
+							<div class="col">
+								<label for="First name" class="form-label">First name</label>
+								<input type="text" class="form-control" placeholder="" aria-label="First name">
+							</div>
+							<div class="col">
+								<label for="Last name" class="form-label">Last name</label>
+								<input type="text" class="form-control" placeholder="" aria-label="Last name">
+							</div>
+						  </div>
 
-				<div class="item">
-					<div class="item-top">
-						<h2>Lluvia</h2>
-						<h3>3/5</h3>
-					</div>
-					<div class="item-middle">
-						<img src="./images/3.JPG" alt="test">
-					</div>
-					<div class="item-bottom">
-						<p>Lluvia con gotas de colores diferentes...</p>
-					</div>
-				</div>
+						  <div class="col-md-6">
+							<label for="inputCity" class="form-label">City</label>
+							<input type="text" class="form-control" id="inputCity">
+						  </div>
+						  <div class="col-md-4">
+							<label for="inputState" class="form-label">State</label>
+							<select id="inputState" class="form-select">
+							  <option selected>Pick a state</option>
+							  <option>...</option>
+							</select>
+						  </div>
+						  <div class="col-md-2">
+							<label for="inputZip" class="form-label">Postal Code</label>
+							<input type="text" class="form-control" id="inputZip">
+						  </div>
 
-				<div class="item">
-					<div class="item-top">
-						<h2>Mi amiga</h2>
-						<h3>4/5</h3>
-					</div>
-					<div class="item-middle">
-						<img src="./images/4.JPG" alt="test">
-					</div>
-					<div class="item-bottom">
-						<p>Mi mejor amiga, Irene y yo</p>
-					</div>
-				</div>
+							<div class="col-md-6" >
+								We accept:
+								<div class="col-md-4 bg-secondary rounded">
+								
+								<input type="radio" name="ccard" id="cc1" value="master">
+								<label for="master" class="form-label"><i class="fa-brands fa-cc-mastercard" style="color:white"></i></label>
+								<input type="radio" name="ccard" id="cc2" value="visa">
+								<label for="visa" class="form-label"><i class="fa-brands fa-cc-visa" style="color:white"></i></label>
+								<input type="radio" name="ccard" id="cc3" value="diners">
+								<label for="diners" class="form-label"><i class="fa-brands fa-cc-diners-club" style="color:white"></i></label>
+								<input type="radio" name="ccard" id="cc4" value="amex">
+								<label for="amex" class="form-label"><i class="fa-brands fa-cc-amex" style="color:white"></i></label>
+								
+								
+				
 
-				<div class="item">
-					<div class="item-top">
-						<h2>Felicidades de la exploradora</h2>
-						<h3>5/5</h3>
+								</div>
+								
+
+
+							</div>
+						  <div class="col-md-6">
+							<label for="message" class="form-label" ">Message</label>
+							<textarea rows="10" cols="20" class="form-control">
+								
+							</textarea> 
+							
+						  </div>
 					</div>
-					<div class="item-middle">
-						<img src="./images/5.JPG" alt="test">
-					</div>
-					<div class="item-bottom">
-						<p>Feliz cumpleaños te desea la exploradora y los ratones....</p>
-					</div>
+
+					
+					
+				  </div>
+				  
+				 
+				  
+				  
 				</div>
+			</div>
+						
+
+			<div class="d-flex justify-content-end">
+				<button type="submit" class="btn btn-secondary">Cancel</button>
+            	<button type="submit" class="btn btn-primary ms-3">Send</button>
 
 			</div>
+			</div>
+
+			
 		</div>
-	</body>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		</body>
 </html>
