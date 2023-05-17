@@ -1,4 +1,4 @@
-# Simple Instagram Project By Inti Luna
+# Simple Form Project By Inti Luna
 
 ## Regular hmtl & CSS version
 We used html & CSS to create a website that shows pictures and text in a manner that resembles Instagram.
